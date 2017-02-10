@@ -5,6 +5,9 @@ class PagesController < ApplicationController
   def about
   end
   
-  def contact
+  def login
+  end
+  
+  def packages
   end
 end

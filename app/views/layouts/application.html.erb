@@ -1,6 +1,5 @@
-<!-- This code will appear on every page -->
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <title>Bo Blacha</title>
     <%= csrf_meta_tags %>
@@ -9,10 +8,32 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
   
-<!-- The following is where code is injected from other view files -->
-  <body>
-    <div class="container">
-      <%= yield %>
+  <body> 
+    <div id="wrapper">
+      <div class="top-bar">
+        <header>Bo Blacha</header>
+      </div>
+      
+      <div class="nav-bar">
+        <ul class="header-subnav">
+          <li><%= link_to "HOME", root_path %></li>
+          <li><%= link_to "ABOUT", about_path %></li>
+          <li><%= link_to "PACKAGES", packages_path %></li>
+          <li><%= link_to "FREE QUOTE", quote_path %></li>
+          <li><%= link_to "LOGIN", login_path %></li>
+        </ul>
+      </div>
+      
+      <div class="container">
+        <%= yield %>
+      </div>
+      
+      <div class="foot">
+        <footer class="footer">
+          <p class="copyr"><a id="copyright"></a>shite design © 2017 Bo Blacha</p>
+        </footer>
+    	</div>
+      
     </div>
   </body>
 </html>

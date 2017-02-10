@@ -17,6 +17,139 @@
 @import 'bootstrap-sprockets';
 @import 'bootstrap';
 
-h1, h2, h3 {
-  font-family: 'Open Sans', sans-serif;
+
+html, body {
+  height: 100%;
+}
+
+body {
+	background: #666666;
+	font-family: 'Open Sans', sans-serif;
+	position: relative;
+}
+
+/* --- Title Bar --- */
+.top-bar {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#630117+53,7f022c+97,7f022c+100,930222+100,7f022c+100 */
+  background: #630117; /* Old browsers */
+  background: -moz-linear-gradient(left,  #630117 53%, #7f022c 97%, #7f022c 100%, #930222 100%, #7f022c 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(left,  #630117 53%,#7f022c 97%,#7f022c 100%,#930222 100%,#7f022c 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right,  #630117 53%,#7f022c 97%,#7f022c 100%,#930222 100%,#7f022c 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#630117', endColorstr='#7f022c',GradientType=1 ); /* IE6-9 */
+	color: #FFF;
+	font-size: 60px;
+	text-align: center;
+	height: 130px;
+	width: 100%;
+	border-top: 4px solid #440117;
+	border-bottom: 4px solid #440117;
+
+  header {
+    font-weight: bold;
+
+  }
+}
+
+
+/* --- Navigation Bar --- */
+
+.nav-bar {
+  margin-top: 0px;
+  text-align: center;
+  background: #000;
+  border-bottom: 4px solid #440117;
+}
+
+.header-subnav {
+  float: none;
+  position: relative;
+  text-align: center;
+  margin-bottom: 0;
+
+  li {
+    float: none;
+    display: inline-block;
+
+    a {
+      color: #FFF;
+      display: block;
+      font-weight: bold;
+      letter-spacing: 1px;
+      padding: 14px 16px;
+
+      &.is-active,
+      &:hover {
+        background: #4d4d4d;
+        color: #FFF;
+      }
+
+      &:hover {
+        transition: all .30s ease-in-out;
+      }
+    }
+  }
+}
+
+/*--- Container --- */
+
+.container {
+  border: 4px solid #FFF;
+	border-radius: 0px;
+	background: #FFF;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	min-height: 100%;
+}
+
+
+
+/* --- Footer Bar --- */
+
+footer {
+  height: 35px;
+  background: #000;
+  text-align: center;
+  bottom: 0;
+  position: relative;
+  border-top: 3px solid #440117;
+
+  p {
+    color: #FFF;
+    font-size: 11px;
+    margin-top: 7px;
+  }
+}
+
+/* --- Other Shit --- */
+
+.wrapper {
+  min-height: 100%;
+}
+
+
+.col-md-8 {
+  border-right: 1px dotted #ccc;
+  border-spacing: 10px 50px;
+  padding-left: 60px;
+  padding-right: 60px;
+}
+
+h1 {
+  border-top: 16px;
+}
+
+.message {
+  padding-top: 10px; 
+}
+
+.query-box {
+  background: #e6e6e6;
+  border: 1px solid #d9d9d9;
+  border-radius: 5px;
+}
+
+
+/* --- Quote Comment Box  --- */
+textarea {
+    max-width: 100%;
 }
